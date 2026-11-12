@@ -1523,7 +1523,7 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .hero__center{min-height:calc(100svh - 64px);justify-content:center;gap:22px}
 }
 @media (min-width:1024px){
-  .hero__center{padding-top:88px;padding-bottom:104px}
+  .hero__center{padding-top:64px;padding-bottom:96px}
   .hero__title--center{font-size:clamp(64px,min(8.4vw,14.5vh),136px);line-height:.95}
 }
 
@@ -1531,4 +1531,14 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
 .hero__center .hero__cta-group .btn--cta{min-height:68px;font-size:20px;font-weight:800;padding:0 32px}
 @media (min-width:1024px){
   .hero__center .hero__cta-group .btn--cta{min-height:84px;font-size:24px;padding:0 64px}
+}
+
+/* --- Hero: крупнее бейдж «от завода-производителя», жёлтая мигающая точка --- */
+.hero__center .badge--light{gap:12px;padding:9px 20px 9px 14px;font-size:16px;font-weight:600;background:rgba(0,0,0,.32)}
+.hero__center .badge--light .badge__dot{width:16px;height:16px;background:transparent;box-shadow:0 0 0 2px var(--yellow)}
+.hero__center .badge--light .badge__dot::after{inset:3px;background:var(--yellow)}
+@media (min-width:1024px){
+  .hero__center .badge--light{gap:14px;padding:12px 28px 12px 18px;font-size:21px}
+  .hero__center .badge--light .badge__dot{width:20px;height:20px}
+  .hero__center .badge--light .badge__dot::after{inset:4px}
 }
