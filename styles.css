@@ -1542,3 +1542,6 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .hero__center .badge--light .badge__dot{width:20px;height:20px}
   .hero__center .badge--light .badge__dot::after{inset:4px}
 }
+
+/* --- Hero: заголовок легче — больше воздуха --- */
+.hero__title--center{font-weight:700;letter-spacing:.005em}
