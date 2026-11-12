@@ -1523,7 +1523,7 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .hero__center{min-height:calc(100svh - 64px);justify-content:center;gap:22px}
 }
 @media (min-width:1024px){
-  .hero__center{padding-top:64px;padding-bottom:96px}
+  .hero__center{padding-top:48px;padding-bottom:88px}
   .hero__title--center{font-size:clamp(64px,min(8.4vw,14.5vh),136px);line-height:.95}
 }
 
@@ -1543,5 +1543,14 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .hero__center .badge--light .badge__dot::after{inset:4px}
 }
 
-/* --- Hero: заголовок легче — больше воздуха --- */
-.hero__title--center{font-weight:700;letter-spacing:.005em}
+/* --- Hero: больше воздуха между блоками текста --- */
+.hero__center{gap:0}
+.hero__center > .hero__title{margin-top:24px}
+.hero__center > .hero__slogan{margin-top:26px}
+.hero__center > .hero__cta-group{margin-top:34px}
+@media (min-width:1024px){
+  .hero__center > .hero__title{margin-top:36px}
+  .hero__center > .hero__slogan{margin-top:40px}
+  .hero__center > .hero__cta-group{margin-top:52px}
+  .hero__title--center{font-size:clamp(64px,min(8.4vw,12.6vh),136px)}
+}
