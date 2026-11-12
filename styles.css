@@ -820,7 +820,7 @@ body.modal-open{overflow:hidden}
 .hero--photo{
   color:#fff;
   background:
-    linear-gradient(180deg,rgba(8,10,12,.64) 0%,rgba(8,10,12,.72) 55%,rgba(8,10,12,.86) 100%),
+    linear-gradient(180deg,rgba(8,10,12,.74) 0%,rgba(8,10,12,.8) 55%,rgba(8,10,12,.9) 100%),
     url("assets/hero-stations.jpg") center/cover no-repeat #15181b;
 }
 .hero__center{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding-top:56px;padding-bottom:64px}
@@ -1554,3 +1554,6 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .hero__center > .hero__cta-group{margin-top:52px}
   .hero__title--center{font-size:clamp(64px,min(8.4vw,12.6vh),136px)}
 }
+
+/* --- Hero: заголовок не жирный --- */
+.hero__title--center{font-weight:700;letter-spacing:.005em}
