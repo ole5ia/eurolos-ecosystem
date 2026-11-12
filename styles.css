@@ -1516,3 +1516,13 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .hero__title--center > span,.hero__center > .hero__slogan,.hero__center > .hero__cta-group,.hero__cta-group .btn--cta{animation:none}
   .hero__slogan-mark::after{animation:none;transform:scaleX(1)}
 }
+
+/* --- Hero: крупный заголовок на весь экран --- */
+.hero__title--center{font-size:clamp(34px,11.4vw,52px);line-height:.98}
+@media (max-width:1023px){
+  .hero__center{min-height:calc(100svh - 64px);justify-content:center;gap:22px}
+}
+@media (min-width:1024px){
+  .hero__center{padding-top:88px;padding-bottom:104px}
+  .hero__title--center{font-size:clamp(64px,min(8.4vw,14.5vh),136px);line-height:.95}
+}
