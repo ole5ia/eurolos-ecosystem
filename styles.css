@@ -1618,3 +1618,8 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .izhs-card--wide{grid-column:span 4}
   .izhs-card--accent{grid-column:span 2}
 }
+.nowrap{white-space:nowrap}
+@media (max-width:620px){
+  .izhs-roof,.izhs-card--wide .izhs-roof{width:150px;height:96px;right:-14px;top:-10px}
+  .izhs-roof path{stroke-width:2.5}
+}
