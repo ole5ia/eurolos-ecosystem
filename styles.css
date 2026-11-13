@@ -1610,3 +1610,11 @@ body.modal-open .sticky-cta{transform:translateY(115%)}
   .izhs-card--wide .izhs-unit{font-size:26px}
   .izhs-roof{width:260px;height:160px}
 }
+/* 4 карточки: широкая + жёлтая, ниже две поровну */
+@media (min-width:621px) and (max-width:900px){ .izhs-card--accent{grid-column:span 2} }
+@media (min-width:901px){
+  .izhs-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .izhs-card{grid-column:span 3}
+  .izhs-card--wide{grid-column:span 4}
+  .izhs-card--accent{grid-column:span 2}
+}
